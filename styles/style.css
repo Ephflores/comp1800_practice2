@@ -1,1 +1,122 @@
+/*
+* --------------------------------------------
+* Custom styles to override the default Bootstrap ones
+* --------------------------------------------
+*/
 
+/* New Color Palette:
+* Lightest (Main Background): #f2fbf2
+* Dark Green (Primary): #005a00
+* Light Green (Secondary): #72b372
+* Reddish-Brown (Accent): #b75858
+*/
+
+.bg-info {
+    background-color: #72b372 !important;
+    /* Light green for secondary backgrounds */
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: #005a00;
+    /* Dark green for brand name & nav links for visibility */
+}
+
+.navbar-brand {
+    font-family: 'Caveat', cursive;
+    /*change the font name for what you have*/
+    font-size: 2.25rem;
+}
+
+.btn-info {
+    color: #f2fbf2;
+    /* Lightest shade for text on info button for contrast */
+    background-color: #72b372;
+    /* Light green for button background */
+    border-color: #005a00;
+    /* Dark green for button border */
+}
+
+.btn-primary {
+    color: #f2fbf2;
+    /* Lightest shade for text */
+    font-size: 150%;
+    background-color: #005a00;
+    /* Dark green for primary button background */
+    border-color: #b75858;
+    /* Reddish-brown for border to use as accent */
+    border-width: thick;
+}
+
+body {
+    background-color: #f2fbf2;
+    /* Lightest shade for body background to follow the 60% rule */
+}
+
+/* Style for radio button labels when not selected */
+.btn-outline-primary {
+    color: #005a00;
+    /* Dark green text color for contrast */
+    border-color: #72b372;
+    /* Light green border color */
+}
+
+/* Style for radio button labels on hover or focus */
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    color: #f2fbf2;
+    /* Lightest color for text */
+    background-color: #72b372;
+    /* Light green background */
+    border-color: #005a00;
+    /* Dark green border for emphasis */
+}
+
+/* Style for the active (checked) radio button label */
+.btn-check:checked+.btn-outline-primary,
+.btn-check:active+.btn-outline-primary {
+    color: #f2fbf2;
+    /* Lightest color for text */
+    background-color: #005a00;
+    /* Dark green background for primary action */
+    border-color: #b75858;
+    /* Reddish-brown border to use as accent */
+}
+
+/* Custom styles for dropdown to match the new color palette */
+
+/* Style for the dropdown button */
+.btn-secondary {
+    color: #f2fbf2; /* Lightest color for text */
+    background-color: #005a00; /* Dark green for the button background */
+    border-color: #72b372; /* Light green for the button border */
+}
+
+/* Change dropdown button hover/focus styles */
+.btn-secondary:hover, .btn-secondary:focus {
+    color: #f2fbf2; /* Lightest color remains for text */
+    background-color: #72b372; /* Light green for background on hover/focus */
+    border-color: #005a00; /* Dark green for border for emphasis */
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+    background-color: #f2fbf2; /* Lightest color for dropdown background */
+    border-color: #72b372; /* Light green for border color */
+}
+
+/* Style for dropdown items */
+.dropdown-item {
+    color: #005a00; /* Dark green for text color */
+}
+
+/* Style for dropdown item hover */
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #f2fbf2; /* Lightest color for text on hover/focus */
+    background-color: #72b372; /* Light green for background on hover/focus */
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
